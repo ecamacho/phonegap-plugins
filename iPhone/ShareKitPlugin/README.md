@@ -2,7 +2,7 @@
 
 By Erick Camacho
 
-## New it last version
+## New in this version
 
 Added shareImage method.
 
