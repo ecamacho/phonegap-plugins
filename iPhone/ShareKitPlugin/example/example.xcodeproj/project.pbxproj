@@ -100,6 +100,10 @@
 		A77DB7C113EDD1E200961E2C /* ShareKitPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A77DB7C013EDD1E200961E2C /* ShareKitPlugin.m */; };
 		A77DB7C313EDD20500961E2C /* www in Resources */ = {isa = PBXBuildFile; fileRef = A77DB7C213EDD20500961E2C /* www */; };
 		A7A29BA513F772FE003409BB /* SHKSharer+Phonegap.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A29BA413F772FE003409BB /* SHKSharer+Phonegap.m */; };
+		A7B4587413FC292700068A7E /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B4586D13FC292700068A7E /* EGOCache.m */; };
+		A7B4587513FC292700068A7E /* EGOImageLoadConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B4586F13FC292700068A7E /* EGOImageLoadConnection.m */; };
+		A7B4587613FC292700068A7E /* EGOImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B4587113FC292700068A7E /* EGOImageLoader.m */; };
+		A7B4587713FC292700068A7E /* EGOImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B4587313FC292700068A7E /* EGOImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -267,6 +271,14 @@
 		A77DB7C213EDD20500961E2C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 		A7A29BA313F772FE003409BB /* SHKSharer+Phonegap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SHKSharer+Phonegap.h"; path = "Plugins/SHKSharer+Phonegap.h"; sourceTree = "<group>"; };
 		A7A29BA413F772FE003409BB /* SHKSharer+Phonegap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SHKSharer+Phonegap.m"; path = "Plugins/SHKSharer+Phonegap.m"; sourceTree = "<group>"; };
+		A7B4586C13FC292700068A7E /* EGOCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOCache.h; sourceTree = "<group>"; };
+		A7B4586D13FC292700068A7E /* EGOCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOCache.m; sourceTree = "<group>"; };
+		A7B4586E13FC292700068A7E /* EGOImageLoadConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageLoadConnection.h; sourceTree = "<group>"; };
+		A7B4586F13FC292700068A7E /* EGOImageLoadConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageLoadConnection.m; sourceTree = "<group>"; };
+		A7B4587013FC292700068A7E /* EGOImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageLoader.h; sourceTree = "<group>"; };
+		A7B4587113FC292700068A7E /* EGOImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageLoader.m; sourceTree = "<group>"; };
+		A7B4587213FC292700068A7E /* EGOImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageView.h; sourceTree = "<group>"; };
+		A7B4587313FC292700068A7E /* EGOImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -346,6 +358,7 @@
 		A77DB6AF13EDCD2A00961E2C /* example */ = {
 			isa = PBXGroup;
 			children = (
+				A7B4586B13FC292700068A7E /* EGOImageLoader */,
 				A77DB7C213EDD20500961E2C /* www */,
 				A77DB6DE13EDCD7300961E2C /* ShareKit */,
 				A77DB6BA13EDCD2B00961E2C /* Resources */,
@@ -784,6 +797,21 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		A7B4586B13FC292700068A7E /* EGOImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				A7B4586C13FC292700068A7E /* EGOCache.h */,
+				A7B4586D13FC292700068A7E /* EGOCache.m */,
+				A7B4586E13FC292700068A7E /* EGOImageLoadConnection.h */,
+				A7B4586F13FC292700068A7E /* EGOImageLoadConnection.m */,
+				A7B4587013FC292700068A7E /* EGOImageLoader.h */,
+				A7B4587113FC292700068A7E /* EGOImageLoader.m */,
+				A7B4587213FC292700068A7E /* EGOImageView.h */,
+				A7B4587313FC292700068A7E /* EGOImageView.m */,
+			);
+			path = EGOImageLoader;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -942,6 +970,10 @@
 				A77DB7BA13EDCD7300961E2C /* SHKViewControllerWrapper.m in Sources */,
 				A77DB7C113EDD1E200961E2C /* ShareKitPlugin.m in Sources */,
 				A7A29BA513F772FE003409BB /* SHKSharer+Phonegap.m in Sources */,
+				A7B4587413FC292700068A7E /* EGOCache.m in Sources */,
+				A7B4587513FC292700068A7E /* EGOImageLoadConnection.m in Sources */,
+				A7B4587613FC292700068A7E /* EGOImageLoader.m in Sources */,
+				A7B4587713FC292700068A7E /* EGOImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

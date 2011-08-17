@@ -19,6 +19,14 @@ ShareKitPlugin.prototype.share = function(message, url)
 };
 
 
+ShareKitPlugin.prototype.shareImage = function(message, urlImage)
+{
+	
+	PhoneGap.exec(null, null, "ShareKitPlugin", "shareImage", [message, url]);
+    
+};
+
+
 ShareKitPlugin.prototype.isLoggedToTwitter = function( callback )
 {
 	

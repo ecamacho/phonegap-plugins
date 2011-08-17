@@ -2,6 +2,10 @@
 
 By Erick Camacho
 
+## New it last version
+
+Added shareImage method.
+
 ## Adding ShareKit to a PhoneGap Project
 
 
@@ -34,8 +38,9 @@ Now you should be able to succesfully compile your project.
 
 1. Copy ShareKitPlugin.h, ShareKitPlugin.m, SHKSharer+Phonegap.h and SHKSharer+Phonegap.m to your project. 
 2. Add both files to the Plugins Folder in Xcode.
-3. Copy the ShareKitPlugin.js to your www folder.
-4. Modify the PhoneGap.plist file of your application. Under the key "Plugins" add another one with key name
+3. Copy the .h and .m files in EGOImageLoader into your project (these files are used to share images).
+4. Copy the ShareKitPlugin.js to your www folder.
+5. Modify the PhoneGap.plist file of your application. Under the key "Plugins" add another one with key name
 ShareKitPlugin and value ShareKitPlugin.
 
 
@@ -68,6 +73,8 @@ you must logout the current one first );
 6. `facebookConnect( )` Shows the Facebook Login form, if the user is not logged in. Convenient method for login to Facebook without showing the post in the wall form.
 
 7. `shareToFacebook(message, url )` Shows only the post in the wall form of Facebook if the user is logged in. 
+
+8. `shareImage(message, urlImage )` Shares an image along with a message in a social network. The url provided must point to a valid image. 
 
 ## Running the example
 The example is a project for XCode 4. It shows a basic use case for the plugin, in order to use it you must add the API keys of the services that you want to test in the SHKConfig.h file.

@@ -31,6 +31,8 @@
 
 - (void)share:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options;
 
+- (void)shareImage:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options;
+
 - (void)isLoggedToTwitter:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options;
 
 - (void)isLoggedToFacebook:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options;

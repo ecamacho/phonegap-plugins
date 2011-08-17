@@ -9,7 +9,7 @@
 
 #import "SHKTwitter.h"
 #import "SHKFacebook.h"
-
+#import "EGOImageView.h"
 
 @interface ShareKitPlugin (PrivateMethods)
 
@@ -31,6 +31,20 @@
     [[SHK currentHelper] setRootViewController:self.appViewController];
 
 	[actionSheet showInView:self.appViewController.view];
+}
+
+- (void)shareImage:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options {
+    NSString *message = [arguments objectAtIndex:1];
+    NSURL *imageURL = [NSURL URLWithString:[arguments objectAtIndex:2]];
+    EGOImageView *imageView = [[EGOImageView alloc] init];
+    imageView.imageURL = imageURL;
+   
+    SHKItem *item = [SHKItem image:imageView.image title:message];
+    SHKActionSheet *actionSheet = [SHKActionSheet actionSheetForItem:item];
+    [[SHK currentHelper] setRootViewController:self.appViewController];
+    
+	[actionSheet showInView:self.appViewController.view];
+    [imageView release];
 }
 
 - (void)isLoggedToTwitter:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options {

@@ -56,6 +56,12 @@
         shareKit.share("I'm using shareKit from phonegap", "http://www.getsharekit.com");
     }
         
+    function shareImageOnSocialNetworks( ) 
+    {
+            
+        shareKit.share("I'm sharing an image from phonegap", "http://joegus.com/wp-content/uploads/2011/01/rickrolled.jpg");
+    }    
+        
     function isUserLoggedToTwitter( ) {
     
         shareKit.isLoggedToTwitter( function ( isLogged ) {
@@ -113,6 +119,10 @@
 	  <p>Don't know how to get started? Check out <em><a href="http://github.com/phonegap/phonegap-start">PhoneGap Start</a></em>  	
       <p>
         <button ontouchend="shareOnSocialNetworks()">Share on social networks</button>
+      </p>
+      <p>
+        <button ontouchend="shareImageOnSocialNetworks()">Share Image on social networks</button>
+      
       </p>
       <p>
       <button ontouchend="isUserLoggedToTwitter()">Is user logged to twitter?</button>
